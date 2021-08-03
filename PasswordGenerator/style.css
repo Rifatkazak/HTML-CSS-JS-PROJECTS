@@ -31,6 +31,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     background-color: rebeccapurple;
+    min-width: 300px;
 }
 .box, .length{
     margin-top: 1rem;
@@ -75,4 +76,20 @@ body{
     width: 100%;
     margin-top:1rem;
     text-align: center;
+}
+@media screen and (max-width:450px) {
+
+    .container{
+        width: 30%;
+        height: 30rem;
+        margin:3rem;    
+    }
+    .content{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+
 }

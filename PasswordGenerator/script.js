@@ -97,13 +97,21 @@ submit.addEventListener("click", () =>{
     for (let i = 0; i < password.length; i++) {
          var x = password[Math.floor(Math.random()* password.length)]
          if(newPassword.includes(x)){
-             i--;
+             i--
          }else{
             newPassword += x
          }  
     }
   
     result.innerHTML = newPassword;
+
+    submit.textContent = "Yenile" ;
+
+    submit.addEventListener("click", () => {
+        if (result.innerHTML !== ""){
+            window.location.reload()
+        }   
+    })
+    
     
 })
-result.innerHTML = ""
